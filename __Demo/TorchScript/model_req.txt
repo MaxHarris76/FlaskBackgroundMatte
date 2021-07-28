@@ -1,0 +1,2 @@
+Must get the pretrained model from the background matting v2 github repo that is called 'torchscript_resnet50_fp32.pth'
+https://github.com/PeterL1n/BackgroundMattingV2

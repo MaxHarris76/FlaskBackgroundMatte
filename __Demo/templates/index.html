@@ -7,15 +7,18 @@
     <title>Model Deployment</title>
 </head>
 <body>
-    <h1>Image Matting</h1>
-    <p>
-        Enter your name    
+    <h1 class = "text-center">WebMatte</h1>
+    <p class = "text-center\">
+        WebMatte is a free to use web service to perform image matting! To begin, upload an image of your background scene that you would like to remove with matting.
+        This means an image of the scene without the subject in
     </p>
     
-    <form action="/submit" method="POST">
-        <input type="text" name="username" placeholder="user name">
-        <input type="submit">
+    <form class = "p-3 text center" action='uploader', method = "POST" enctype="multipart/form-data">
+        <input class = "form-control" type="file" name="imagefile1">
+        <input class = "form-control" type="file" name="imagefile2">
+        <input type = "submit" value = "Matte image"/>
     </form>
+
 
 </body>
 </html>
