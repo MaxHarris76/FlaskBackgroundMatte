@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv+"X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Deployment</title>
-</head>
-<body>
-    <h1 class = "text-center">WebMatte</h1>
-    <p class = "text-center\">
-        WebMatte is a free to use web service to perform image matting! To begin, let's login!
-    </p>
-    
-    <form action="login">
-        <input type="submit" value="Submit">
-    </form> 
+{% extends "base.html" %}
+{% block title %} Landing page {% endblock %}
+{% block content %}
+<p class = "text-center\">
+    WebMatte is a free to use web service to perform image matting! To begin, let's login!
+</p>
 
-
-</body>
-</html>
+<form action="login">
+    <input type="submit" value="Submit">
+</form> 
+{% endblock %}

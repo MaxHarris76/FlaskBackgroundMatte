@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv+"X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Deployment</title>
-</head>
-<body>
-    <h1 class = "text-center">WebMatte</h1>
-    
-    <p class = "text-center\">
-        here is your image boss
-        <img src="/{{img_path}}">
-    </p>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %} View matte {% endblock %}
+{% block content %}
+<p class = "text-center\">
+    here is your image boss
+    <img src="/{{img_path}}">
+</p>
+{% endblock %}
