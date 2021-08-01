@@ -1,14 +1,17 @@
 {% extends "base.html" %}
-{% block title %} Submit inputs {% endblock %}
+{% block tabtitle %} Submit inputs {% endblock %}
 {% block content %}
 <p class = "text-center\">
     Here you can upload your two inputs. The first being the background and the second being the source with the subject
     in the image.
 </p>
 
-<form class = "p-3 text center" action='uploader', method = "POST" enctype="multipart/form-data">
-    <input class = "form-control" type="file" name="imagefile1">
-    <input class = "form-control" type="file" name="imagefile2">
-    <input type = "submit" value = "Matte image"/>
-</form>
+<div id="submit files form" text-align:center>
+    <form class = "p-3 text center" action='uploader', method = "POST" enctype="multipart/form-data">
+        <input class = "form-control" type="file" name="imagefile1">
+        <br> </br>
+        <input class = "form-control" type="file" name="imagefile2">
+        <input type = "submit" value = "Matte image"/>
+    </form>
+</div>
 {% endblock %}

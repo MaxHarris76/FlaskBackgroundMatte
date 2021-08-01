@@ -1,8 +1,12 @@
 {% extends "base.html" %}
-{% block title %} View matte {% endblock %}
+{% block tabtitle %} View matte {% endblock %}
 {% block content %}
-<p class = "text-center\">
-    here is your image boss
-    <img src="/{{img_path}}">
+<p class = "text-center\", "font-weight-bold">
+    Congratulations! You have performed image matting on your source image! Below you can download the image.
+    <br> </br>
+    <img src="/{{img_path}}" class="rounded mx-auto d-block" alt="Responsive image" width="60%" height="60%" border="3px solid #000;">
+    <div id="Download file button" text-align:center>
+    <a href="/{{img_path}}" class="btn btn-primary" background-color = "#4caf50" download="proposed_file_name">Download</a>
+</div>
 </p>
 {% endblock %}

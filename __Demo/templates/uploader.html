@@ -1,11 +1,13 @@
 {% extends "base.html" %}
-{% block title %} Upload success {% endblock %}
+{% block tabtitle %} Upload success {% endblock %}
 {% block content %}
 <p class = "text-center\">
     files uploaded!
 </p>
 
-<form class = "p-3 text center" action='view_com', method = "POST" enctype="multipart/form-data">
-    <input type = "submit" value = "View Matte"/>
-</form>
+<div id="View Matte button" text-align:center>
+    <form class = "p-3 text center" action='view_com', method = "POST" enctype="multipart/form-data">
+        <input type = "submit" value = "View Matte"/>
+    </form>
+</div>
 {% endblock %}

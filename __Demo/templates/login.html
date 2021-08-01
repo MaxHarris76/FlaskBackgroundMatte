@@ -1,13 +1,17 @@
 {% extends "base.html" %}
-{% block title %} Login page {% endblock %}
+{% block  tabtitle %} Login page {% endblock %}
 {% block content %}
-<p class = "text-center\">
-    Please enter a username.
-</p>
 
-<form action='#' method = "POST">
-    <label for="uname">Username:</label><br>
-    <input type="text" name="nm" ><br><br>
-    <input type="submit" value="Submit">
-</form> 
+<br> </br>
+
+<div id="login form" display: flex;>
+    <fieldset>
+        <legend>Login: </legend>
+        <form action='#' method = "POST">
+            <label for="uname">Please input a username below</label><br>
+            <input type="text" name="nm" ><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+    </fieldset>
+</div>
 {% endblock %}
